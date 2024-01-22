@@ -1,0 +1,9 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "remix-vite-partykit-starter",
+  "main": "party/server.ts",
+  "compatibilityDate": "2024-01-22",
+  "parties": {
+    "geo": "party/geo.ts"
+  }
+}

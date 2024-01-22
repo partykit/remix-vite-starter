@@ -1,4 +1,5 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "partymix";
+import WhosHere from "~/components/whos-here";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,7 +11,10 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix (SPA Mode)</h1>
+      <h1>
+        Welcome to 💿 Remix (SPA Mode) <br /> running on 🎈 asdasdasdPartyKit{" "}
+        <br /> built on ⚡️ Vite
+      </h1>
       <ul>
         <li>
           <a
@@ -27,6 +31,7 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <WhosHere />
     </div>
   );
 }

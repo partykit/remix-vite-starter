@@ -1,6 +1,6 @@
-# templates/spa
+# 💿 remix ⤫ 🎈 partykit ⤫ ⚡️ vite
 
-This template leverages [Remix SPA Mode](https://remix.run/docs/en/main/future/spa-mode) to build your app as a Single-Page Application using [Client Data](https://remix.run/docs/en/main/guides/client-data) for all of you data loads and mutations.
+This template leverages [Remix SPA Mode](https://remix.run/docs/en/main/future/spa-mode) to build your app as a Single-Page Application using [Client Data](https://remix.run/docs/en/main/guides/client-data) for all of you data loads and mutations. This is then deployed on to [PartyKit](https://partykit.io), for multiplayer/real-time support.
 
 ⚠️ This is built on top of the Remix Vite template. Remix support for Vite is currently unstable and not recommended for production.
 
@@ -9,29 +9,37 @@ This template leverages [Remix SPA Mode](https://remix.run/docs/en/main/future/s
 ## Setup
 
 ```shellscript
-npx create-remix@latest --template remix-run/remix/templates/spa
+npx create-remix@latest --template partykit/remix-vite-starter
 ```
 
 ## Development
 
-You can develop your SPA app just like you would a normal Remix app, via:
+You will be running two processes during development:
+
+- The Remix development server (powered by Vite)
+- The PartyKit server
+
+Both are started with one command:
 
 ```shellscript
 npm run dev
 ```
 
-## Production
+If you want to check the production build, you can stop the dev server and run following commands:
 
-When you are ready yo build a production version of your app, `npm run build` will generate your assets and an `index.html` for the SPA.
-
-```shellscript
+```sh
 npm run build
+npm start
 ```
 
-You can serve this from any server of your choosing, for a simple example, you could use [http-server](https://www.npmjs.com/package/http-server):
+Then refresh the same URL in your browser (no live reload for production builds).
 
-```shellscript
-npx http-server build/client/
+## Deployment
+
+```sh
+npm run deploy
 ```
+
+If you don't already have a PartyKit account, you'll be prompted to create one during the deploy process.
 
 [remix-vite-docs]: https://remix.run/docs/en/main/future/vite
