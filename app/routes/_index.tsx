@@ -12,8 +12,8 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <h1>
-        Welcome to 💿 Remix (SPA Mode) <br /> running on 🎈 asdasdasdPartyKit{" "}
-        <br /> built on ⚡️ Vite
+        Welcome to 💿 Remix (SPA Mode) <br /> running on 🎈 PartyKit <br />{" "}
+        built on ⚡️ Vite
       </h1>
       <ul>
         <li>
