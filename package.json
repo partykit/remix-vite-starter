@@ -15,7 +15,7 @@
     "@remix-run/react": "^2.5.1",
     "http-server": "^14.1.1",
     "partymix": "^0.0.12",
-    "partysocket": "^0.0.22",
+    "partysocket": "^0.0.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -32,7 +32,7 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "partykit": "^0.0.75",
+    "partykit": "^0.0.76",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
     "vite-tsconfig-paths": "^4.3.1"
