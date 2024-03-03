@@ -4,8 +4,9 @@ declare const DEVMODE: boolean;
 // DEVMODE will be true in local dev, and false in production
 // read package.json to see how this is set
 
-export default {
-  async onFetch(request: Party.Request) {
+export default class Server implements Party.Server {
+  // constructor(public room : Party.Room) {}
+  static async onFetch(request: Party.Request) {
     // when developing locally, we simply proxy all
     // non-party requests to the vite dev server
     if (DEVMODE) {
@@ -18,5 +19,7 @@ export default {
     // You could also add additional api handlers here.
 
     return new Response("Not found", { status: 404 });
-  },
-} satisfies Party.PartyKitServer;
+  }
+}
+
+Server satisfies Party.Worker;
